@@ -28,7 +28,7 @@ pipeline {
         stage('Docker Build') {
             agent any
             steps {
-                sh 'docker build -t bangsil-user:latest /var/jenkins_home/workspace/bangsil-user'
+                sh 'docker build -t bangsil-user:latest /var/jenkins_home/workspace/bangsil_user'
             }
             post {
                 success {
