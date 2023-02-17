@@ -53,7 +53,7 @@ pipeline {
                 docker rmi $(docker images -f dangling=true -q)'
 
                 sh 'docker run -d --name bangsil-user \
-                -p 8000:8000 \
+                -p 8081:8081 \
                 -v /etc/localtime:/etc/localtime:ro \
                 bangsil-user:latest'
             }
